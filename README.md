@@ -56,7 +56,7 @@ cd frontend
 npm install
 ```
 
-### Step 4: Run the Application Frontend
+### Step 6: Run the Application Frontend
 
 Start the frontend development server.
 
