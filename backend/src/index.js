@@ -9,7 +9,7 @@ const app = express();
 dotenv.config();
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://mern-todo-app-rouge.vercel.app", "https://mern-full-stack-todo.vercel.app/"],
+  origin: ["http://localhost:3000", "https://mern-todo-app-rouge.vercel.app", "https://mern-full-stack-todo.vercel.app"],
   credentials: true,
 };
 
