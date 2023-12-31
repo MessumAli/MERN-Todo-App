@@ -1,6 +1,5 @@
 import dotenv from "dotenv";
 import express from "express";
-import morgan from "morgan";
 import { connectDB } from "./db/index.js";
 import todoRoutes from "./routes/todoRoutes.js";
 
@@ -9,7 +8,6 @@ const app = express();
 dotenv.config();
 
 app.use(express.json());
-app.use(morgan("dev"));
 
 // Connect to the database
 connectDB();
