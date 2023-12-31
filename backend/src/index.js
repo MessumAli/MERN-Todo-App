@@ -1,11 +1,17 @@
 import dotenv from "dotenv";
 import express from "express";
+import cors from "cors";
 import { connectDB } from "./db/index.js";
 import todoRoutes from "./routes/todoRoutes.js";
 
 const app = express();
 
 dotenv.config();
+
+const corsOptions = {
+  origin: ["http://localhost:3000", "https://mern-todo-app-rouge.vercel.app"],
+  credentials: true,
+};
 
 app.use(express.json());
 
