@@ -15,6 +15,7 @@ connectDB();
 // Mount Todo routes
 app.use("/api/v1/todos", todoRoutes);
 
+
 // Start the server and listen on the specified port
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on http://localhost: ${process.env.PORT}`);
