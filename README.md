@@ -26,11 +26,11 @@ Navigate to the `backend` directory and run `npm install` command.
 cd backend
 npm install
 ```
-### Step 2: Create dotenv file
+### Step 2: Create Backend dotenv file
 
 Create a .env file in the backend directory.
 
-### Step 3: Configure .env File
+### Step 3: Configure Backend .env File
 
 Open the .env file and set the following variables:
 
@@ -56,7 +56,19 @@ cd frontend
 npm install
 ```
 
-### Step 6: Run the Application Frontend
+### Step 6: Create Frontend dotenv file
+
+Create a .env file in the frontend directory.
+
+### Step 7: Configure Frontend .env File
+
+Open the .env file and set the following variables:
+
+```bash
+VITE_APP_BASE_URL =YOUR_VITE_APP_BASE_URL
+```
+
+### Step 8: Run the Application Frontend
 
 Start the frontend development server.
 
