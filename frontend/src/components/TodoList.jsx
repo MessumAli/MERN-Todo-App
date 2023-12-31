@@ -26,7 +26,7 @@ export const TodoList = () => {
   // Fetch all todos from the server
   const fetchTodos = useCallback(async () => {
     try {
-      const response = await axios.get(`${VITE_APP_BASE_URL}/api/v1/todos/all-todos`);
+      const response = await axios.get(`https://tiny-ruby-dragonfly-robe.cyclic.app/api/v1/todos/all-todos`);
       setTodos(response.data);
     } catch (error) {
       console.error("Error fetching todos:", error);
@@ -40,7 +40,7 @@ export const TodoList = () => {
   // Handle deletion of a specific todo
   const handleDeleteTodo = async (todoId) => {
     try {
-      await axios.delete(`${VITE_APP_BASE_URL}/api/v1/todos/delete-todos/${todoId}`);
+      await axios.delete(`https://tiny-ruby-dragonfly-robe.cyclic.app/api/v1/todos/delete-todos/${todoId}`);
       fetchTodos();
     } catch (error) {
       console.error("Error deleting todo:", error);
@@ -56,7 +56,7 @@ export const TodoList = () => {
         return;
       }
 
-      await axios.put(`${VITE_APP_BASE_URL}/api/v1/todos/update-todos/${todoId}`, {
+      await axios.put(`https://tiny-ruby-dragonfly-robe.cyclic.app/api/v1/todos/update-todos/${todoId}`, {
         text: editTodo,
       });
       fetchTodos();
@@ -71,7 +71,7 @@ export const TodoList = () => {
   // Handle toggling the status (completed/pending) of a specific todo
   const handleCheckboxChange = async (todoId) => {
     try {
-      await axios.patch(`${VITE_APP_BASE_URL}/api/v1/todos/${todoId}/toggle`);
+      await axios.patch(`https://tiny-ruby-dragonfly-robe.cyclic.app/api/v1/todos/${todoId}/toggle`);
       fetchTodos();
     } catch (error) {
       console.error("Error toggling todo status:", error);

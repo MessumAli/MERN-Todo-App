@@ -9,7 +9,7 @@ export const TodoForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${VITE_APP_BASE_URL}/api/v1/todos/create-todos`, {
+      const response = await axios.post(`https://tiny-ruby-dragonfly-robe.cyclic.app/api/v1/todos/create-todos`, {
         text: todos,
       });
 
