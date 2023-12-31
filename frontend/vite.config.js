@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      '/api': 'https://mern-todo-app-backend.vercel.app/',
+      '/api': 'https://mern-todo-app-backend.vercel.app',
     },
   },
 })
